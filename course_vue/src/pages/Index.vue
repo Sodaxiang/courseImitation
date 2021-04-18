@@ -1,28 +1,27 @@
 <template>
     <div>
-        Index
+       <page-header
+         :backIconShow="false"
+         :listIconShow="true">
+       </page-header>
     </div>
 </template>
 
 <script>
-import IndexModel from 'models/index';
+import PageHeader from 'components/Header';
 
-const indexModel = new IndexModel();
+// import IndexModel from 'models/index';
+
+// const indexModel = new IndexModel();
 
 
 export default {
     name: 'IndexPage',
-    async mounted() {
-        const data = await indexModel.getCourseDatas();
-        console.log(data)
+    components: {
+        PageHeader
     }
 }
 </script>
 
 <style lang="scss" scoped>
-    div {
-        margin-top: 3rem;
-        color: red;
-        // background: black;
-    }
 </style>

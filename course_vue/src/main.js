@@ -9,6 +9,7 @@ import 'scripts/common.js';
 import 'styles//resets.css';
 import 'styles/border.css';
 import 'styles/common.css';
+import 'styles/iconfont.css';
 
 Vue.config.productionTip = false
 
