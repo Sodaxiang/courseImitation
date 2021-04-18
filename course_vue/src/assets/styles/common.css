@@ -1,0 +1,16 @@
+html {
+    font-size: .14rem;
+    background: #efefef;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
